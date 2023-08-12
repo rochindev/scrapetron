@@ -1,0 +1,341 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+*,html,body {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+
+/*FREE VECTORS BY Freepik<*/
+
+/* GroupedProducts.css */
+
+.brand-container {
+  padding-bottom: 16px; /* Add some space at the bottom for better visibility */
+}
+
+.product-carousel-wrapper {
+  overflow-x: auto;
+  padding: 20px; /* Add some space at the bottom for better visibility */
+}
+
+.product-carousel {
+  display: flex;
+  gap: 16px;
+}
+
+.brand-logo{
+  max-width: 350px;
+  margin: 20px 0px;
+}
+
+/* CSS for my SINGLE productCards */
+.product-card {
+  min-width: 300px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  flex-direction: column;
+  margin: 10px; /* Adjust the margin as needed */
+  margin-top: 0px;
+}
+
+.product-card:hover{
+  cursor: pointer;
+}
+
+.selected {
+  background-color: rgb(139, 217, 139)
+}
+
+.product-image {
+  max-width: 100%;
+  max-height: 180px;
+  object-fit: cover; /* Preserve image aspect ratio */
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  margin-top: 10px;
+}
+
+.product-info {
+  padding: 15px;
+  flex-grow: 1; /* Allow the product info section to grow and occupy available space */
+}
+
+.product-name {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.product-store,
+.product-brand,
+.product-size,
+.product-price,
+.product-rating {
+  margin: 5px 0;
+}
+
+.product-price {
+  display: flex;
+  justify-content: center;
+}
+
+.price-amnt{
+  font-weight: 600;
+}
+
+.on-span {
+  margin-left: 5px;
+}
+
+.product-rating {
+  color: #007bff; /* Blue color for the rating text */
+}
+
+.view-details-btn {
+  background-color: #36b453; /* Green color for the button */
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.view-details-btn:focus {
+  outline: none;
+}
+
+.view-details-btn:hover {
+  background-color: #28a745; /* Darker blue color on hover */
+}
+
+/*PRODUCTZZZ CARD*/
+.products-card {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+.products-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.products-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-right: 10px;
+  border-radius: 8px;
+}
+
+.products-stores {
+  white-space: nowrap;
+}
+
+.products-stores > ul{
+  list-style: none;
+  margin: 5% 0px;
+}
+
+.products-stores > ul li {
+  display: flex; 
+  justify-content: space-between; /* Pushes "Buy" button to the right otherwise they are all messed up */
+  align-items: center; /* Align items vertically */
+}
+
+.store-logo {
+  max-width: 62px;
+  margin-right: 5px;
+  margin-left: 6px;
+}
+
+.for-span {
+  font-size: 13px;
+  margin-left: 4px;
+  margin-right: 6px;
+}
+
+.price-span {
+  font-weight: 600;
+  margin-right: 4px;
+}
+
+.product-stores-btn {
+  background-color: #36b453;
+  color: #fff;
+  border: none;
+  padding: 4px 8px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+  margin: 0px 3px;
+}
+
+.product-stores-btn:hover {
+  background-color: #28a745;
+}
+
+.product-stores-btn:focus {
+  outline: none;
+}
+
+/* Define the star icon */
+.star-icon {
+  color: #f1c40f; 
+  font-size: 16px; 
+}
+
+/* Style for filled stars */
+.star-icon.filled {
+  color: #f1c40f; 
+}
+
+/* Style for empty stars */
+.star-icon:not(.filled) {
+  color: #ccc; 
+}
+
+
+/*INFO BANNER*/
+
+code {
+  background-color: rgb(218, 218, 218);
+  font-size: 13px;
+  border-radius: 2px;
+  padding: 1px;
+}
+
+.readme-section > h1 {
+  margin-bottom: 20px;
+}
+
+.dropdown-header {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: box-shadow 0.5s, border-top 0.5s, border-bottom 0.5s;
+}
+
+.dropdown-header.active {
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  border-top: none;
+  border-bottom: none;
+}
+
+.fa-solid {
+  color:#007bff;
+  transform: rotate(0deg);
+  transition: transform 0.3s;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.dropdown-header.active > i {
+  transform: rotate(90deg);
+}
+
+.how-to {
+  padding: 10px 30px;
+  margin: 10px 0px;
+  border-top: 1px solid rgb(178, 178, 178);
+  border-bottom: 1px solid rgb(178, 178, 178);
+  text-align: left;
+  font-size: 20px;
+  color: rgb(67, 67, 67);
+}
+
+.dropdown-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-in-out;
+}
+
+.dropdown-content.visible {
+  max-height: 3000px;
+}
+
+.dropdown-content > div {
+  margin: 11px 0px;
+}
+
+.TLDR {
+  text-align: left;
+  padding: 10px;
+  border: 2px solid rgba(242, 206, 5, 0.799);
+  border-radius: 6px;
+  background-color: rgb(255, 249, 216);
+}
+
+.TLDR > p {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.notes {
+  text-align: left;
+  padding: 10px;
+  border: 2px solid #4ea4ff;
+  border-radius: 6px;
+  background-color: #d8ebff;
+}
+
+.instructions {
+  text-align: left;
+}
+
+.instructions > ol {
+  line-height: 1.6rem;;
+}
+
+.instructions > ol > li {
+  margin: 12px 0px;
+}
