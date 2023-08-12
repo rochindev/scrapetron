@@ -1,7 +1,7 @@
 import {React, useState, useRef, useEffect} from 'react';
 import ProductCard from './product-card';
 import ProductsCard from './products-card';
-import data from '../../../final-data.json';
+import data from '../../final-data.json';
 import ceravelogo from './assets/cerave-logo.png'
 import coolalogo from './assets/coola-logo.png'
 import larocheposaylogo from './assets/la-roche-posay-logo.png'
